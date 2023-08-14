@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <app-create-food></app-create-food>
+    <app-list-food></app-list-food>
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent {
   title = 'observer';
